@@ -48,9 +48,12 @@
 
 <script>
 function loadDoc() {
-  var xhttp = new XMLHttpRequest();
+  const xhttp = new XMLHttpRequest();
   xhttp.open("GET", "http://204.2.62.173:8080/d7bbcae33e604a80ae73ffa83933ed7f/update/V1?value=1", true);
   xhttp.send();
+	xhttp.onreadystatechange = (e) => {
+		console.log(xhttp.responseText)
+	}
 }
 </script>
 
