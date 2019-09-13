@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIFF Starter</title>
     <link rel="stylesheet" href="style.css">
@@ -11,14 +8,8 @@
 
 <div class="col">
   <div class="container-1">
-    <div class="btn btn-one" onclick="clickButton()">
+    <div class="btn btn-one" onclick="loadDoc()">
       <span>Light  ON</span>
-<script>function clickButton() {
-  var s = document.createElement("script");
-  s.src = "getblynk.php";
-  document.body.appendChild(s);
-}
-</script>
     </div>
   </div>
 
@@ -54,6 +45,14 @@
     </div>
   </div>
 </div>
+
+<script>
+function loadDoc() {
+  var s = document.createElement("script");
+  s.src = "http://cannayaosmartfarm.com:8080/f178733a0c344217bf7b529262387d39/update/V1?value=1";
+  document.body.appendChild(s);
+}
+</script>
 
 </body>
 </html>
