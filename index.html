@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIFF Starter</title>
     <link rel="stylesheet" href="style.css">
@@ -45,17 +48,6 @@
     </div>
   </div>
 </div>
-
-<script>
-function loadDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "https://204.2.62.173:9443/d7bbcae33e604a80ae73ffa83933ed7f/update/V1?value=1", true);
-  xhttp.send();
-	xhttp.onreadystatechange = (e) => {
-		console.log(xhttp.responseText)
-	}
-}
-</script>
 
 </body>
 </html>
